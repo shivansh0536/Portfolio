@@ -2441,7 +2441,8 @@
 
     // ── COPY EMAIL ──
     function copyEmail() {
-      navigator.clipboard.writeText('shivansh@example.com').then(() => {
+      const email = document.querySelector('.email-display').textContent;
+      navigator.clipboard.writeText(email).then(() => {
         const btn = document.getElementById('copy-btn');
         btn.textContent = '✓ Copied!'; btn.classList.add('copied');
         setTimeout(() => { btn.textContent = 'Copy Email'; btn.classList.remove('copied'); }, 2000);
