@@ -1565,7 +1565,9 @@
         flex-direction: column;
       }
 
-      nav .nav-links {
+      nav .nav-links,
+      .nav-right .btn-primary,
+      .nav-right .btn-ghost {
         display: none;
       }
 
@@ -1575,6 +1577,10 @@
 
       section {
         padding: 70px 5vw;
+      }
+
+      .contact-card {
+        padding: 48px 24px;
       }
 
       #ai-chat-panel {
@@ -1604,6 +1610,24 @@
       .orbit-ring-3 {
         width: 218px;
         height: 218px;
+      }
+    }
+    @media (max-width: 480px) {
+      .t-card {
+        width: 80vw;
+        max-width: 280px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content {
+        padding: 0 4vw;
+      }
+
+      .contact-card {
+        padding: 40px 20px;
       }
     }
   </style>
